@@ -6,7 +6,7 @@ These components are implemented with different approaches explained in the work
 
 1. _Vanilla_: Own React components styled with [CSS modules](https://github.com/css-modules/css-modules). We just use the classnames library to help applying conditional styles.
 2. _CSS-in-JS_: Own React components styles with [macaron](https://macaron.js.org/) library. Styles live in the Javasript context.
-3. _Ay11 components: Third party components (from [RaduxUI](https://www.radix-ui.com/)) styles with an Atomic CSS library ([tailwindcss](https://tailwindcss.com/)) using the [tailwind-variants](https://www.tailwind-variants.org/) library for better styles management.
+3. _Ay11 components_: Third party components (from [RaduxUI](https://www.radix-ui.com/)) styles with an Atomic CSS library ([tailwindcss](https://tailwindcss.com/)) using the [tailwind-variants](https://www.tailwind-variants.org/) library for better styles management.
 
 ## Running locally
 
