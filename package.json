@@ -8,13 +8,17 @@
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "sb": "storybook dev -p 6006",
+    "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
+    "@macaron-css/core": "^1.2.0",
+    "@macaron-css/react": "^1.4.0",
+    "@radix-ui/react-collapsible": "^1.0.3",
     "@storybook/addon-a11y": "^7.0.22",
     "autoprefixer": "^10.4.14",
+    "classnames": "^2.3.2",
     "postcss": "^8.4.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -22,6 +26,8 @@
     "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-jsx": "^7.22.5",
+    "@macaron-css/vite": "^1.4.3",
     "@storybook/addon-essentials": "7.0.22",
     "@storybook/addon-interactions": "7.0.22",
     "@storybook/addon-links": "7.0.22",

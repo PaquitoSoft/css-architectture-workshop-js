@@ -1,7 +1,9 @@
 import Button from './button';
 
+import '../theme.css';
+
 export default {
-  title: 'Design system/Button',
+  title: 'vanilla/Button',
   component: Button,
   tags: ['autodocs'],
   argTypes: {

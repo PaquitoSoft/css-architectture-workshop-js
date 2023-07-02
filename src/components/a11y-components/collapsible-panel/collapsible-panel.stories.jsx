@@ -1,7 +1,9 @@
 import CollapsiblePanel from './collapsible-panel';
 
+import '../../../main.css';
+
 export default {
-  title: 'Design system/Collapsible Panel',
+  title: 'a11y components/Collapsible Panel',
   component: CollapsiblePanel,
   tags: ['autodocs'],
 };

@@ -1,8 +1,18 @@
 import PropTypes from 'prop-types';
+import cx from 'classnames';
+
+import styles from './notification.module.css';
 
 function Notification(props) {
   return (
-    <div>
+    <div
+      className={cx(
+        styles.notification,
+        styles[`type-${props.type}`],
+        styles[`size-${props.size}`],
+        { [styles.rounded]: props.isRounded }
+      )}
+    >
       {props.children}
     </div>
   );
@@ -25,6 +35,12 @@ Notification.propTypes = {
    * Content to render within the button
    */
   children: PropTypes.node.isRequired,
+};
+
+Notification.defaultProps = {
+  type: 'info',
+  size: 'medium',
+  isRounded: false
 };
 
 export default Notification;

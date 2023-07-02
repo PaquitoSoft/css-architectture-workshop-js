@@ -1,8 +1,19 @@
 import PropTypes from 'prop-types';
 
+import StyledButton from './buttons.styles';
+
 function Button(props) {
   return (
-    <button onClick={props.onClick}>{props.children}</button>
+    <StyledButton
+      {...props}
+      disabled={props.isDisabled}
+      onClick={props.onClick}
+      aria-controls={props.ariaControls}
+      aria-expanded={props.ariaExpanded}
+      aria-label={props.ariaLabel}
+    >
+      {props.children}
+    </StyledButton>
   );
 }
 
@@ -31,6 +42,25 @@ Button.propTypes = {
    * Content to render within the button
    */
   children: PropTypes.node.isRequired,
+  /**
+   * Defines aria-controls ay11 attribute
+   */
+  ariaControls: PropTypes.string,
+  /**
+   * Defines aria-expanded ay11 attribute
+   */
+  ariaExpanded: PropTypes.bool,
+  /**
+   * Defines aria-label ay11 attribute
+   */
+  ariaLabel: PropTypes.string,
+};
+
+Button.defaultProps = {
+  type: 'button',
+  size: 'medium',
+  isRounded: false,
+  isDisabled: false
 };
 
 export default Button;

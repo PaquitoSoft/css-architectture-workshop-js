@@ -1,7 +1,7 @@
 import Notification from './notification';
 
 export default {
-  title: 'Design system/Notification',
+  title: 'css-in-js/Notification',
   component: Notification,
   tags: ['autodocs'],
 };

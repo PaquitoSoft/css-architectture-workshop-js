@@ -1,0 +1,32 @@
+.notification {
+  color: var(--color-surface);
+  font-family: var(--font-family);
+  font-size: var(--font-size-20);
+  padding: var(--spacing-20) var(--spacing-30);
+  width: 200px;
+}
+
+.type-info {
+  background-color: var(--color-primary-100);
+}
+.type-success {
+  background-color: var(--color-secondary-100);
+}
+.type-warning {
+  background-color: var(--color-warning-100);
+  color: var(--color-solid);
+}
+.type-error {
+  background-color: var(--color-critical-100);
+}
+
+.size-small {
+  width: 100px;
+}
+.size-large {
+  width: 300px;
+}
+
+.rounded {
+  border-radius: var(--border-radius-10);
+}

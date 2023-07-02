@@ -1,0 +1,31 @@
+.container {
+  font-family: var(--font-family);
+  border: 1px solid var(--color-tertiary-100);
+  padding: var(--spacing-20) var(--spacing-10);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  color: var(--color-solid);
+  cursor: pointer;
+  height: var(--spacing-40);
+  width: var(--spacing-40);
+}
+
+.title {
+  margin: 0;
+  padding: var(--spacing-20) 0;
+}
+
+.content {
+  display: none;
+  padding: var(--spacing-20) 0 var(--spacing-20) calc(var(--spacing-60) + var(--spacing-20));
+}
+
+.expanded {
+  display: block;
+}
